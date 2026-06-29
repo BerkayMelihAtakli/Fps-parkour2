@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            // No checkpoint yet — respawn at start silently
+            elapsedTime = 0f;
             player.TeleportTo(startSpawnPos);
             showDeath = true;
             deathTimer = 1f;
